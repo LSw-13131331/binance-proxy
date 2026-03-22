@@ -4,7 +4,7 @@ import requests, os
 app = Flask(__name__)
 
 PROXY_TOKEN  = "ls-binance-proxy-2026"
-BINANCE_BASE = "https://api.binance.com"
+BINANCE_BASE = "https://api.binance.us"
 
 @app.route("/<path:path>", methods=["GET","POST","PUT","DELETE"])
 def proxy(path):
